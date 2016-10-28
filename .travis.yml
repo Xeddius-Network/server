@@ -40,9 +40,7 @@ script:
 deploy:
   provider: releases
   user: Xeddius
-  file:
+  file: *
   password:
     secure: "VGDYUwK2ka4PXaAVVLoRbb8dYKarJcpkF3NG/nZwXS2RkbDoXsLr9btNRmejUc09+Y4YsgO8ZaeHh6py3S2YyJUWaZBFpr2I/Ue+mEo63ir396JACUk5sDxHyI47VvEMZYI5swrnPXdPXCWKG4Bl3FJdZnmA9e+SjMoTvu+2q66FbF+DP4zyrBV6Aq/m3fP2gj/9wiD2DkrPag/I4Gb/tI0yEiDaJKNOovDT4bec0DC1jWqxhXWa2EhMId6ocebZS/KYNbGk8Ls8R7K+Ni+cy9cVNte7wwps1f1Oh3948kvkNDce8LTeYznWLqL62LsfryckrqPpW6dhV6zo7g1csKKPh5gdX5j9MKVOzmVYJO4S9yitjzOk1HaiVbtTkXUUIsdNu1+IZK3SsdM0+rF6kgC366rBCsBZkr5VHbwuMrKvkx9hJBUyiyHuNzgW5B9gkSrcF2wd737IC9e0sxfj570AUjrByZvp/ZIOXAqsbTe51Geov4odO27y+XBnR+fU3/EOxzxDFOmez0byOZlUjoq2I609YazuGo7a6e7b/WqDTpZvRYLsbeL2u0knVYyKg0u5DKoK+jH/a5Yg1pG+zSR186PTarq00RP3uraXiFC3FOTsCoXxScx2O9TDi+UnUsjukmiPhpIeLvgr17HV2EG76JgJMfRJxBJfBoeB/So="
   skip_cleanup: true
-  on:
-    tags: true
