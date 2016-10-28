@@ -8,9 +8,6 @@ git:
   depth: 1
 
 # send notifications to stack as well as email
-notifications:
-  slack: getmangos:yRgNBSgRQVh8WdfGEbT08Hit
-
 # build on both Linux and OSX (finally)
 os:
   - linux
@@ -40,3 +37,11 @@ script:
   - cd _build
   - cmake -DCMAKE_INSTALL_PREFIX=../_install ..
   - make -j4
+
+deploy:
+  provider: releases
+  user: Xeddius
+  password:
+  skip_cleanup: true
+  on:
+    tags: true
